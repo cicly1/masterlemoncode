@@ -1,0 +1,18 @@
+//------------------------------------------
+//Clone
+//------------------------------------------
+var persona = {nombre:'Luis', Apellido1:'Corbete', Ciudad:'Santa Cruz'};
+
+var clonePersona= clone=> Object.assign({}, clone);
+console.log(persona);
+const nuevaPersona=clonePersona(persona);
+console.log(nuevaPersona);
+
+//------------------------------------------
+//merge
+//------------------------------------------
+const a ={name:"Maria", surname:"Ibañez", country:"SPA"};
+const b ={name:"Luisa", age:31, married:true}
+
+var mergePersona = (a,b) =>  Object.assign(b,a);
+console.log(mergePersona(a,b));
