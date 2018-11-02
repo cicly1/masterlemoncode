@@ -1,0 +1,41 @@
+class SlothMachine {
+    constructor()
+    {
+        this.monedas=1;
+    }
+
+    get monedas(){
+        return this._monedas;
+    }
+    set monedas(value)
+    {
+        this._monedas=value;
+    }
+
+    get boolea1n(){
+        return Math.random() >= 0.5;
+    }
+        get boolean2(){
+        return Math.random() >= 0.5;
+    }
+    get boolean3(){
+        return Math.random() >= 0.5;
+    }
+    play()
+    {
+        this.monedas+=1;
+                if ((this.boolea1n==true) && (this.boolean2==true) && (this.boolean3==true))
+        {
+            console.log("Congratulations!!!. You won " + this.monedas +  " coins!!");
+            this.monedas=0;
+        } else {
+             console.log("Good luck next time!!");
+        }         
+    }
+}
+    
+    const machine1 = new SlothMachine();
+    machine1.play();
+    machine1.play();
+    machine1.play();
+    machine1.play();
